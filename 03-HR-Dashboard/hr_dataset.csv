@@ -1,0 +1,201 @@
+EmployeeID,Age,Gender,Department,JobRole,Education,YearsAtCompany,PerformanceRating,Attrition,Salary
+1,33,Male,IT,IT Manager,PhD,15,2,Yes,87905
+2,55,Female,R&D,Lab Technician,Master,4,4,Yes,47638
+3,58,Male,HR,HR Executive,Master,20,4,Yes,140004
+4,39,Female,HR,HR Manager,PhD,5,5,No,118771
+5,54,Male,R&D,Research Scientist,PhD,20,4,No,131717
+6,46,Male,HR,HR Manager,Bachelor,0,1,Yes,115546
+7,59,Male,Finance,Accountant,Master,19,2,No,117147
+8,31,Male,R&D,Lab Technician,Master,6,3,Yes,143552
+9,45,Female,Sales,Sales Executive,Bachelor,12,2,Yes,132819
+10,34,Female,Sales,Sales Executive,Bachelor,12,4,No,32064
+11,31,Female,Sales,Sales Executive,Bachelor,12,5,Yes,81876
+12,38,Male,Finance,Accountant,PhD,20,4,Yes,124950
+13,35,Male,Sales,Sales Manager,Bachelor,17,4,No,149348
+14,27,Female,Sales,Sales Manager,PhD,1,3,No,102292
+15,29,Male,Finance,Accountant,High School,0,2,No,110317
+16,54,Female,Sales,Sales Executive,PhD,9,4,Yes,139989
+17,26,Male,Finance,Finance Manager,PhD,10,5,Yes,85531
+18,32,Female,IT,Software Engineer,PhD,4,5,No,54963
+19,47,Female,Sales,Sales Manager,Master,12,4,Yes,47260
+20,59,Female,R&D,Lab Technician,Master,4,5,No,140283
+21,51,Female,Finance,Accountant,High School,19,5,No,112356
+22,55,Female,Sales,Sales Manager,PhD,4,4,No,53228
+23,35,Female,R&D,Research Scientist,Master,0,4,Yes,72451
+24,53,Male,HR,HR Manager,PhD,12,4,No,79718
+25,43,Male,IT,IT Manager,High School,14,4,Yes,106826
+26,59,Male,IT,System Analyst,PhD,10,5,No,67913
+27,23,Female,Sales,Sales Executive,High School,9,5,No,136816
+28,60,Female,IT,Software Engineer,High School,20,4,Yes,45633
+29,43,Male,Sales,Sales Manager,High School,1,3,No,108011
+30,42,Female,IT,System Analyst,Bachelor,5,3,No,68068
+31,40,Male,Finance,Accountant,Master,16,5,No,81473
+32,53,Female,Sales,Sales Manager,Master,9,5,Yes,142835
+33,43,Male,IT,Software Engineer,Master,11,1,No,74529
+34,39,Female,R&D,Research Scientist,PhD,13,5,Yes,114193
+35,59,Male,HR,HR Executive,PhD,10,1,No,35374
+36,47,Male,R&D,Research Scientist,High School,0,1,No,125989
+37,43,Male,IT,IT Manager,PhD,5,4,No,116690
+38,56,Female,R&D,Research Scientist,PhD,17,2,No,82294
+39,52,Female,Sales,Sales Manager,Master,11,1,Yes,59894
+40,40,Male,HR,HR Executive,High School,1,3,No,59936
+41,58,Female,HR,HR Manager,Bachelor,7,4,No,36273
+42,35,Female,IT,Software Engineer,PhD,9,4,Yes,85137
+43,58,Female,IT,Software Engineer,PhD,14,3,Yes,147057
+44,50,Male,Finance,Accountant,Bachelor,7,2,No,95909
+45,53,Female,Finance,Finance Manager,PhD,5,5,Yes,76890
+46,42,Male,R&D,Research Scientist,PhD,7,2,Yes,91035
+47,54,Male,R&D,Research Scientist,Master,13,3,No,104693
+48,57,Male,HR,HR Manager,Master,18,2,Yes,108354
+49,29,Male,IT,Software Engineer,Master,9,3,Yes,149035
+50,23,Male,Sales,Sales Executive,PhD,5,2,Yes,128696
+51,23,Female,HR,HR Manager,PhD,3,2,No,101333
+52,31,Male,IT,Software Engineer,Master,15,2,Yes,131202
+53,34,Male,Sales,Sales Manager,High School,13,5,Yes,72677
+54,43,Male,Finance,Finance Manager,PhD,19,1,Yes,32350
+55,50,Male,Finance,Accountant,High School,13,5,No,104512
+56,58,Female,IT,System Analyst,Master,11,1,Yes,73574
+57,23,Male,IT,Software Engineer,High School,14,5,No,56351
+58,53,Female,HR,HR Manager,Bachelor,18,5,Yes,140274
+59,57,Male,IT,Software Engineer,PhD,0,1,Yes,62477
+60,28,Male,Sales,Sales Manager,High School,20,5,No,72192
+61,35,Female,IT,IT Manager,High School,17,4,Yes,77588
+62,36,Male,HR,HR Manager,PhD,15,5,Yes,31945
+63,54,Male,Sales,Sales Manager,High School,14,1,Yes,136827
+64,30,Female,R&D,Research Scientist,Bachelor,16,1,No,139012
+65,32,Female,Sales,Sales Executive,Master,0,3,No,104320
+66,51,Female,R&D,Research Scientist,Master,19,2,No,115571
+67,51,Female,Sales,Sales Executive,High School,12,1,No,35223
+68,32,Male,Finance,Finance Manager,PhD,6,5,Yes,34370
+69,34,Female,HR,HR Executive,PhD,20,1,Yes,105286
+70,37,Male,Finance,Accountant,Master,2,3,No,119882
+71,59,Male,Sales,Sales Manager,Master,2,1,No,129234
+72,29,Male,R&D,Research Scientist,PhD,5,3,Yes,119691
+73,34,Male,HR,HR Executive,Bachelor,17,4,Yes,144716
+74,28,Female,Sales,Sales Executive,High School,15,5,No,56660
+75,45,Female,R&D,Lab Technician,Master,11,1,No,47889
+76,52,Male,HR,HR Manager,Bachelor,3,5,No,78066
+77,38,Female,Sales,Sales Executive,High School,17,4,No,77373
+78,44,Female,Sales,Sales Executive,PhD,16,4,Yes,59740
+79,39,Male,R&D,Lab Technician,Master,6,1,Yes,36721
+80,56,Female,IT,System Analyst,Bachelor,19,4,No,72213
+81,37,Male,Sales,Sales Manager,Bachelor,3,2,No,144866
+82,43,Female,R&D,Research Scientist,High School,15,4,No,42063
+83,43,Female,HR,HR Executive,Bachelor,9,5,Yes,57077
+84,26,Female,R&D,Research Scientist,Bachelor,7,3,No,66941
+85,35,Male,IT,System Analyst,PhD,10,5,Yes,126391
+86,28,Female,Finance,Accountant,Master,2,3,No,140510
+87,60,Female,Sales,Sales Executive,Bachelor,1,5,No,106895
+88,24,Female,IT,Software Engineer,Bachelor,16,3,Yes,133533
+89,38,Female,Sales,Sales Executive,PhD,18,3,No,110068
+90,29,Male,HR,HR Executive,PhD,14,1,No,130592
+91,39,Male,HR,HR Executive,Bachelor,12,5,Yes,99919
+92,24,Female,R&D,Research Scientist,Bachelor,17,1,Yes,67077
+93,30,Male,Sales,Sales Manager,Bachelor,16,4,No,36630
+94,37,Female,HR,HR Manager,Bachelor,13,3,No,117479
+95,31,Female,HR,HR Executive,PhD,8,1,No,144816
+96,26,Female,R&D,Lab Technician,Master,16,4,No,131456
+97,38,Male,HR,HR Manager,High School,13,4,Yes,89380
+98,59,Male,HR,HR Manager,Bachelor,19,2,No,127446
+99,29,Female,HR,HR Manager,Master,14,4,No,57810
+100,28,Male,IT,Software Engineer,High School,0,4,No,89454
+101,29,Male,Sales,Sales Executive,Master,8,1,No,100749
+102,22,Male,R&D,Research Scientist,Bachelor,1,3,Yes,144721
+103,49,Male,HR,HR Executive,High School,2,4,No,34809
+104,48,Female,R&D,Lab Technician,High School,7,2,No,91290
+105,58,Female,HR,HR Executive,High School,14,5,Yes,147049
+106,25,Female,Finance,Finance Manager,High School,8,2,No,127764
+107,57,Female,HR,HR Manager,High School,5,3,Yes,133770
+108,36,Female,Finance,Finance Manager,Master,17,4,Yes,141063
+109,33,Male,Sales,Sales Manager,High School,0,2,Yes,71551
+110,40,Male,HR,HR Executive,Master,13,1,No,128039
+111,26,Male,HR,HR Manager,Bachelor,20,3,No,70415
+112,46,Female,R&D,Research Scientist,Bachelor,13,2,Yes,58771
+113,57,Female,IT,Software Engineer,PhD,12,3,Yes,134330
+114,33,Male,IT,Software Engineer,PhD,10,2,No,100861
+115,27,Female,Sales,Sales Manager,Master,19,3,Yes,107074
+116,44,Male,Finance,Finance Manager,Bachelor,13,4,Yes,101651
+117,44,Female,R&D,Lab Technician,Master,0,4,Yes,106876
+118,52,Male,R&D,Lab Technician,High School,0,2,Yes,34049
+119,40,Female,Finance,Finance Manager,PhD,4,5,No,53797
+120,38,Male,HR,HR Executive,Bachelor,1,4,No,67472
+121,59,Female,Finance,Finance Manager,Master,9,2,No,75772
+122,32,Male,HR,HR Executive,PhD,14,5,Yes,46555
+123,55,Female,Finance,Finance Manager,Bachelor,16,2,Yes,72730
+124,53,Female,Sales,Sales Executive,Bachelor,5,5,No,36425
+125,35,Female,Sales,Sales Manager,Master,16,1,Yes,86965
+126,60,Male,Finance,Accountant,PhD,19,4,Yes,118949
+127,29,Female,Sales,Sales Manager,Bachelor,1,3,Yes,65703
+128,40,Male,Finance,Accountant,Master,6,3,No,138218
+129,58,Male,Finance,Accountant,Master,20,1,Yes,120123
+130,33,Female,IT,System Analyst,Bachelor,6,5,No,112081
+131,37,Female,R&D,Lab Technician,Bachelor,6,4,Yes,64338
+132,60,Female,HR,HR Executive,Master,5,3,Yes,135954
+133,28,Male,IT,Software Engineer,High School,20,4,No,90886
+134,38,Female,HR,HR Executive,High School,10,4,No,110826
+135,26,Male,IT,System Analyst,Bachelor,0,2,Yes,92365
+136,60,Male,Finance,Finance Manager,Bachelor,18,3,Yes,109220
+137,46,Male,HR,HR Executive,PhD,18,3,Yes,59042
+138,54,Female,R&D,Research Scientist,PhD,18,4,No,61828
+139,26,Male,HR,HR Manager,PhD,2,3,Yes,65616
+140,36,Female,Finance,Accountant,High School,18,4,No,32010
+141,24,Female,IT,System Analyst,Bachelor,5,3,Yes,119983
+142,30,Male,R&D,Lab Technician,PhD,2,4,Yes,77217
+143,38,Female,Finance,Accountant,Bachelor,1,2,Yes,104584
+144,22,Female,Sales,Sales Manager,Master,14,2,Yes,70429
+145,41,Male,HR,HR Executive,Bachelor,13,2,No,91660
+146,36,Male,HR,HR Manager,High School,11,2,Yes,53449
+147,28,Male,R&D,Lab Technician,High School,15,1,Yes,73057
+148,58,Male,Sales,Sales Executive,Bachelor,12,3,Yes,100452
+149,55,Female,HR,HR Manager,Master,19,2,No,51058
+150,37,Female,HR,HR Manager,PhD,20,3,Yes,75446
+151,55,Male,Finance,Accountant,High School,16,5,Yes,115810
+152,46,Male,R&D,Research Scientist,Bachelor,20,3,Yes,95465
+153,26,Male,Sales,Sales Executive,Master,16,1,No,143554
+154,46,Male,Sales,Sales Executive,PhD,19,1,No,96660
+155,45,Female,R&D,Lab Technician,High School,4,3,Yes,138346
+156,41,Male,Finance,Finance Manager,High School,20,3,Yes,109542
+157,45,Male,IT,System Analyst,Master,10,3,No,62000
+158,22,Male,HR,HR Manager,PhD,8,5,No,101851
+159,49,Male,R&D,Lab Technician,Master,2,3,No,129791
+160,60,Female,R&D,Research Scientist,Master,14,5,No,141125
+161,57,Male,IT,Software Engineer,High School,15,2,Yes,54001
+162,24,Female,Sales,Sales Manager,Bachelor,19,5,Yes,57822
+163,39,Male,Finance,Finance Manager,High School,16,2,Yes,112504
+164,22,Male,Sales,Sales Manager,PhD,8,1,Yes,121087
+165,44,Male,HR,HR Manager,Master,7,1,Yes,143184
+166,60,Female,R&D,Research Scientist,PhD,14,1,Yes,48000
+167,36,Female,R&D,Lab Technician,Bachelor,11,2,Yes,31658
+168,54,Female,Sales,Sales Executive,Bachelor,18,1,Yes,131911
+169,28,Female,IT,Software Engineer,PhD,3,4,Yes,133335
+170,46,Female,Finance,Finance Manager,Master,2,3,Yes,59680
+171,25,Female,HR,HR Manager,PhD,11,3,No,107134
+172,25,Male,IT,System Analyst,High School,15,5,No,109139
+173,56,Male,IT,Software Engineer,Bachelor,4,4,No,59913
+174,27,Female,Sales,Sales Executive,High School,9,3,No,33331
+175,34,Male,Sales,Sales Executive,High School,14,4,Yes,118191
+176,50,Female,R&D,Lab Technician,Bachelor,20,2,Yes,126595
+177,41,Male,Finance,Finance Manager,Master,3,3,Yes,97957
+178,49,Female,Sales,Sales Manager,Bachelor,7,3,Yes,73089
+179,59,Male,Sales,Sales Manager,PhD,2,1,Yes,64954
+180,37,Female,Finance,Accountant,High School,7,2,No,99769
+181,48,Female,R&D,Lab Technician,Master,7,1,No,139115
+182,51,Male,Finance,Finance Manager,Bachelor,8,3,No,104596
+183,27,Male,HR,HR Executive,High School,7,3,No,120545
+184,59,Female,Sales,Sales Executive,PhD,9,5,No,37211
+185,43,Male,HR,HR Executive,Master,1,4,Yes,127090
+186,34,Female,R&D,Lab Technician,Bachelor,16,3,No,63694
+187,34,Male,R&D,Lab Technician,Master,7,3,Yes,43393
+188,23,Male,Finance,Accountant,PhD,8,5,Yes,60848
+189,45,Male,Sales,Sales Executive,PhD,6,3,Yes,92826
+190,37,Male,Sales,Sales Manager,High School,8,2,No,44001
+191,40,Male,IT,IT Manager,PhD,4,5,Yes,112497
+192,56,Male,IT,Software Engineer,High School,11,5,No,72933
+193,31,Female,HR,HR Executive,PhD,2,4,No,37322
+194,22,Female,Finance,Accountant,High School,0,3,Yes,65830
+195,40,Male,Sales,Sales Manager,PhD,5,5,No,104886
+196,30,Female,R&D,Research Scientist,PhD,6,1,Yes,125726
+197,26,Female,HR,HR Executive,Bachelor,9,3,Yes,108343
+198,58,Female,R&D,Lab Technician,Bachelor,8,4,No,56627
+199,23,Female,IT,System Analyst,Master,9,3,Yes,148249
+200,55,Male,IT,IT Manager,High School,14,3,Yes,102746
