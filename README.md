@@ -1,6 +1,3 @@
-# Internship-Projects-Data-Analysis
-Collection of  Data Analytics projects completed during my internship.
-Markdown
 <div align="center">
   <h1>🎓 Data Science & Analytics Internship Portfolio</h1>
   <p>A curated collection of Data Science, Machine Learning, and Web Development projects developed during my internship at <b>Ainain Pvt Ltd</b>.</p>
@@ -65,17 +62,4 @@ pip install -r requirements.txt
 # Launch Jupyter
 jupyter notebook
 For Web Projects:
-Simply navigate to the respective project folder and open index.html in your browser, or use VS Code Live Server.
-
-🤝 Let's Connect
-Samad Mehboob | AI Automation Developer & Data Analyst
-
-📧 Email: samadmehboob940@gmail.com
-
-💼 LinkedIn: linkedin.com/in/samadmehboob
-
-🐱 GitHub: @Samad-940
-
-📍 Location: Bahawalpur, Punjab, Pakistan
-
-Special thanks to Ainain Pvt Ltd for the opportunity to work on these impactful projects.
+Navigate to the respective project folder and open index.html in your browser, or use Live Server in VS Code.
