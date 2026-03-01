@@ -1,0 +1,56 @@
+/* General Styles */
+
+
+.business-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-tag {
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background-color: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* QR Code Styling */
+#qrcode {
+    transition: all 0.3s ease;
+}
+
+#qrcode:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Transition */
+.contact-form {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.contact-form.visible {
+    max-height: 500px;
+    opacity: 1;
+    padding: 2rem;
+}

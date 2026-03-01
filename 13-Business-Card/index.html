@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Digital Business Card</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- QR Code Library -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen font-sans flex items-center justify-center p-4">
+    <div class="business-card bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-2xl transform transition-all duration-500 hover:shadow-xl">
+        <!-- Card Header with Gradient -->
+        <div class="card-header bg-gradient-to-r from-primary to-secondary p-8 text-white relative">
+            <div class="absolute top-4 right-4 flex space-x-2">
+                <button class="contact-toggle bg-white/20 hover:bg-white/30 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                    <i class="fas fa-envelope"></i>
+                </button>
+                <button class="download-btn bg-white/20 hover:bg-white/30 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+            
+            <div class="flex items-center space-x-6">
+                <div class="profile-pic h-24 w-24 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center overflow-hidden">
+                    <img src="img/work8.png.png" alt="Profile" class="h-full w-full object-cover" id="profile-img">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold">Samad Mehboob</h1>
+                    <p class="text-blue-100 opacity-90">Data Scientist &amp; AI Engineer</p>
+                    <div class="flex mt-2 space-x-3">
+                        <a href="www.linkedin.com/in/samadmehboob-70790a309" class="text-white/80 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="@Samad59661" class=""><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/Samad-940" id="github-link" class="text-white/80 hover:text-white transition"><i class="fab fa-github"></i></a>
+                        <!-- <a href="#" class="text-white/80 hover:text-white transition"><i class="fas fa-globe"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card Body -->
+        <div class="card-body grid md:grid-cols-3 gap-0">
+            <!-- Left Column - Contact Info -->
+            <div class="p-8 col-span-2 border-r border-gray-100">
+                <div class="contact-info">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-id-card mr-2 text-accent"></i> Contact Information
+                    </h2>
+                    <div class="space-y-3">
+                        <p class="text-gray-600 flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gray-400 w-5"></i>
+                            samadmehboob940@gmail.com
+                        </p>
+                        <p class="text-gray-600 flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-gray-400 w-5"></i>
+                            +92 3707405911
+                        </p>
+                        <p class="text-gray-600 flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-gray-400 w-5"></i>
+                            Bahawalpur,Data Science & AI Engineer
+                        </p>
+                        <p class="text-gray-600 flex items-center">
+                            <i class="fas fa-building mr-3 text-gray-400 w-5"></i>
+                            CodexCrafters
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="skills mt-8">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-code mr-2 text-accent"></i> Technical Skills
+                    </h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm">Python </span>
+                        <span class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                        <span class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm">SQL</span>
+                        <span class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm">Statistics</span>
+                        <span class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm">Data Visualization</span>
+                        <span class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm">Web Scraping</span>
+                        <span class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm">Big Data</span>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - QR Code -->
+            <div class="p-8 flex flex-col items-center justify-center bg-gray-50">
+                <div class="qr-code-container mb-4">
+                    <div id="qrcode" class="p-2 bg-white rounded-lg shadow-sm border border-gray-200"></div>
+                </div>
+                <p class="text-sm text-gray-500 mb-6 text-center">Scan QR code to visit my GitHub profile or save my contact</p>
+                
+                <div class="vcard-download w-full">
+                    <button class="w-full bg-primary hover:bg-secondary text-white py-2 px-4 rounded-lg transition flex items-center justify-center">
+                        <i class="fas fa-address-card mr-2"></i> Download vCard
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form (Hidden by default) -->
+        <div class="contact-form hidden p-8 bg-gray-50 border-t border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Send me a message</h3>
+            <form class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-primary hover:bg-secondary text-white py-2 px-4 rounded-lg transition">
+                    Send Message
+                </button>
+            </form>
+                
+
+         
+</div>
+
+
+
+        <!-- Card Footer -->
+        <div class="card-footer bg-gray-50 p-4 text-center text-gray-500 text-sm border-t border-gray-200">
+            © <span id="current-year"></span> Samad Mehboob. All rights reserved.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
