@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional FAQ Accordion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="faq-container">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+        
+        <div class="faq-list">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item" aria-expanded="false">
+                <button class="faq-question" aria-controls="answer1" id="question1">
+                    <span class="question-text">What is an FAQ accordion?</span>
+                    <span class="toggle-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-answer" id="answer1" aria-labelledby="question1">
+                    <p>An FAQ accordion is a user interface component that allows visitors to toggle the visibility of answers to frequently asked questions, improving content organization and user experience.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 2 -->
+            <div class="faq-item" aria-expanded="false">
+                <button class="faq-question" aria-controls="answer2" id="question2">
+                    <span class="question-text">How does this accordion work?</span>
+                    <span class="toggle-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-answer" id="answer2" aria-labelledby="question2">
+                    <p>This implementation uses semantic HTML5, CSS transitions for smooth animations, and vanilla JavaScript with proper event delegation for optimal performance. It follows WAI-ARIA accessibility standards.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 3 -->
+            <div class="faq-item" aria-expanded="false">
+                <button class="faq-question" aria-controls="answer3" id="question3">
+                    <span class="question-text">Can I have multiple items open?</span>
+                    <span class="toggle-icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-answer" id="answer3" aria-labelledby="question3">
+                    <p>By default, this implementation allows only one item to be open at a time (accordion mode), but you can modify the JavaScript to enable multiple open items if needed.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

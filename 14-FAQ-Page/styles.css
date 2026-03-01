@@ -1,0 +1,262 @@
+ :root {
+    --primary-color: #2563eb;
+    --text-color: #1f2937;
+    --border-color: #e5e7eb;
+    --bg-color: #f9fafb;
+    --transition-speed: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.faq-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.faq-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all var(--transition-speed) ease;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.25rem;
+    text-align: left;
+    background: var(--bg-color);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color var(--transition-speed) ease;
+}
+
+.faq-question:hover {
+    background-color: #f3f4f6;
+}
+
+.question-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.toggle-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: transform var(--transition-speed) ease;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: all var(--transition-speed) ease;
+}
+
+.toggle-icon::before {
+    width: 14px;
+    height: 2px;
+    left: 5px;
+    top: 11px;
+}
+
+.toggle-icon::after {
+    width: 2px;
+    height: 14px;
+    left: 11px;
+    top: 5px;
+}
+
+.faq-item[aria-expanded="true"] .toggle-icon::after {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-speed) ease-out;
+}
+
+.faq-answer-inner {
+    padding: 0 1.25rem 1.25rem;
+}
+
+.faq-item[aria-expanded="true"] .faq-answer {
+    max-height: 300px;
+}
+
+ Focus styles for accessibility 
+.faq-question:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Responsive adjustments  */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .faq-container {
+        padding: 1.5rem;
+    }
+    
+    .faq-title {
+        font-size: 1.5rem;
+    }
+} */
+
+
+
+
+/* Add these new animation styles to your existing CSS */
+
+.faq-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Entrance animation for FAQ items */
+.faq-item {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ripple effect on question click */
+.faq-question {
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-question::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(37, 99, 235, 0.3);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.faq-question:focus:not(:active)::after {
+    animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* Answer expand animation */
+.faq-answer {
+    will-change: max-height;
+    transform-origin: top;
+}
+
+.faq-item[aria-expanded="true"] .faq-answer {
+    animation: answerOpen 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.faq-item[aria-expanded="false"] .faq-answer {
+    animation: answerClose 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes answerOpen {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+@keyframes answerClose {
+    0% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+}
+
+/* Bounce effect for toggle icon */
+.toggle-icon {
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq-item[aria-expanded="true"] .toggle-icon {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
